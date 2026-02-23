@@ -2,10 +2,8 @@ package com.example.shipeatscustomer;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.view.menu.MenuAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -49,7 +47,7 @@ public class A5_MenuManagementActivity extends AppCompatActivity {
         });
 
         // Add Item Button -> Opens Inventory Dialog
-        findViewById(R.id.btnAddItem).setOnClickListener(v -> showInventoryDialog());
+        findViewById(R.id.add_menu_item_button).setOnClickListener(v -> showInventoryDialog());
     }
 
     private void showInventoryDialog() {

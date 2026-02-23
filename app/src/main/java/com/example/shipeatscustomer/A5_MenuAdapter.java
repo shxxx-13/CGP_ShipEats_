@@ -2,14 +2,12 @@ package com.example.shipeatscustomer;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -38,7 +36,7 @@ public class A5_MenuAdapter extends RecyclerView.Adapter<A5_MenuAdapter.MenuView
 
         // Handle Edit Flow
         holder.itemView.setOnClickListener(v ->
-                AdminDialogHelper.showEditMenuDialog(context, item.id, false));
+                AdminDialogHelper.showEditMenuDialog(context, item, false));
 
         // Handle Delete Flow
         holder.btnRemove.setOnClickListener(v ->

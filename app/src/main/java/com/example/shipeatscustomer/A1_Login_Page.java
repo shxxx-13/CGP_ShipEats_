@@ -20,24 +20,6 @@ public class A1_Login_Page extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_a1_login_page);
 
-        Button loginButton = findViewById(R.id.login_button);
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(A1_Login_Page.this, C3_Menu_Page.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView createAccount = findViewById(R.id.create_account);
-        createAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(A1_Login_Page.this, C2_Create_Account.class);
-                startActivity(intent);
-            }
-        });
-
         TextView forgotPassword = findViewById(R.id.forgot_password);
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override

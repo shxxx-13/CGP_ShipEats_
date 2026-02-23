@@ -89,6 +89,10 @@
         <activity
             android:name=".C2_Create_Account"
             android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
         <activity
             android:name=".A5_MenuAdapter"
             android:exported="true">

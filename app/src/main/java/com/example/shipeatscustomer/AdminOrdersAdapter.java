@@ -40,7 +40,6 @@ public class AdminOrdersAdapter extends RecyclerView.Adapter<AdminOrdersAdapter.
         AdminOrderModel order = orderList.get(position);
 
         holder.tvOrderId.setText("Order No. " + order.orderId);
-        holder.tvItems.setText(order.items);
         holder.tvTotal.setText("RM " + order.totalPrice);
 
         holder.itemView.setOnClickListener(v -> {
@@ -96,7 +95,7 @@ public class AdminOrdersAdapter extends RecyclerView.Adapter<AdminOrdersAdapter.
         if (btnSecondary != null) {
             btnSecondary.setOnClickListener(v -> {
                 dialog.dismiss();
-                AdminDialogHelper.showDeleteConfirmDialog(context, order.orderId, true);
+                AdminDialogHelper.showDeleteConfirmDialog(context, order.orderId);
             });
         }
 

@@ -13,12 +13,12 @@ public class OrderDeletedPPActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_order_deleted_pp);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        setContentView(R.layout.activity_a4_order_det_pending);
+
+        findViewById(R.id.btnPrimaryAction).setOnClickListener(v -> {
+            // Success Logic
+            AdminDialogHelper.showStatusDialog(this, R.layout.admin_dialog_order_accepted);
+            finish();
         });
     }
 }

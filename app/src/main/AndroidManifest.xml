@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShipEatsCustomer">
         <activity
+            android:name=".A5_EditMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".OrderCompletedPPActivity"
             android:exported="false" />
         <activity
@@ -21,7 +24,7 @@
             android:name=".OrderDeletedPPActivity"
             android:exported="false" />
         <activity
-            android:name=".OrderAcceptedPPActivity"
+            android:name=".A4_OrderDetailPreparingActivity"
             android:exported="false" />
         <activity
             android:name=".ItemMenuPreviewActivity"
@@ -54,10 +57,10 @@
             android:name=".activity_add_item_mm"
             android:exported="false" />
         <activity
-            android:name=".OrderActivityP1"
+            android:name=".A4_OrderDetailPendingActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuManagementActivity"
+            android:name=".A5_MenuManagementActivity"
             android:exported="false" />
         <activity
             android:name=".MenuManagementActivity2"
@@ -87,7 +90,7 @@
             android:name=".C2_Create_Account"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".A5_MenuAdapter"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

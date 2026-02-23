@@ -68,7 +68,7 @@
             app:layout_constraintTop_toBottomOf="@id/tvFoodName" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRemove"
+            android:id="@+id/btnRemoveMenu"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

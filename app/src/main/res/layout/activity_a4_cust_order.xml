@@ -9,15 +9,29 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topToolbar"
+        style="@style/AppToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        app:title="ShipEats"
-        app:menu="@menu/notif_toolbar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:elevation="4dp"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/notif_toolbar"
+        app:titleCentered="false">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shipeats_logo" />
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:src="@drawable/shipeats_name" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -105,7 +119,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="12dp"
             android:layout_weight="1"
-            tools:listitem="@layout/it_order_card" />
+            tools:listitem="@layout/admin_it_order_card" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

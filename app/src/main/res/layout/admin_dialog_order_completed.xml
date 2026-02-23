@@ -21,7 +21,7 @@
             app:tint="@color/green" />
 
         <TextView
-            style="@style/font1"
+            style="@style/font2"
             android:id="@+id/tvStatusMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/notif_toolbar"
@@ -41,6 +42,7 @@
         app:layout_constraintTop_toBottomOf="@id/topToolbar">
 
         <TextView
+            style="@style/font1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Menu Management"
@@ -49,6 +51,7 @@
             android:textStyle="bold" />
 
         <TextView
+            style="@style/font4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -139,7 +142,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            tools:listitem="@layout/it_menuitem" />
+            tools:listitem="@layout/admin_it_menuitem" />
 
     </LinearLayout>
 
